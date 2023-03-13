@@ -4,7 +4,12 @@
     <title>Startup</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    <!-- 
+    Responsive meta tag ; 
+    Bootstrap is developed mobile first 
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
@@ -18,5 +23,30 @@
   </head>
   <body>
 
+    <!-- Just using class="container d-flex align-items-center" will NOT get what you want.
+
+    Need to also define height:100 as h-100, without affecting current CSS -->
+    <div class="container d-flex align-items-center h-100">
+    
+      <div class="row">
+        <header class="text-center col-12">
+        <!-- <h1 class="text-uppercase"></h1>
+        Makes text in <h1> uppercase -->
+        <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
+        </header>
+
+        <div class="buffer col-12"></div>
+        <section class="text-center col-12">
+          <hr>
+          <!-- Using Bootstrap buttons 
+          https://getbootstrap.com/docs/5.3/components/buttons/ -->
+
+          <!-- <button class="(Bootstrap) btn btn-primary (Custom)btn-xl"></button> -->
+          <a href="https://mailchi.mp/da02055ae7c5/ztmstudents">
+            <button type="button" class="btn btn-primary btn-xl">Find out More</button></a>
+        </section>
+      </div>
+
+    </div>
   </body>
 </html>
